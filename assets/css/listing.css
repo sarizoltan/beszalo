@@ -1,0 +1,162 @@
+/* Szűrő oldalsáv */
+.filter-title {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.filter-list a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+    transition: color 0.2s;
+}
+
+.filter-list a:hover, .filter-list a.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.product-count {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+.tag-badge:hover {
+    background-color: #ced4da;
+    color: #212529;
+}
+
+
+/* Termék kártya */
+.product-card {
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transform: translateY(-5px);
+}
+
+.product-card .card-title a {
+    text-decoration: none;
+    color: #212529;
+    font-size: 1rem;
+}
+
+.product-card .card-title a:hover {
+    color: #007bff;
+}
+
+.product-card .price .sale-price {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.product-card .price .original-price {
+    color: #6c757d;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.product-card .price .regular-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+/* ... meglévő stílusok ... */
+
+/* Kártya kép konténer a badgek pozícionálásához */
+.product-card .image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Badgek konténere */
+.product-card .product-badges {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10;
+}
+
+/* Egyedi badge stílusok */
+.product-card .badge {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Ár konténer */
+.product-card .price-container {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.product-card .original-price {
+    color: #6c757d;
+    text-decoration: line-through;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+.product-card .sale-price, .product-card .regular-price {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+
+.product-card .regular-price {
+    color: #212529; /* Az alapértelmezett ár ne legyen piros */
+}
+
+.product-card .net-price {
+    color: #6c757d;
+    font-size: 0.85em;
+}
+
+/* Kosár gomb */
+.product-card .add-to-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.product-card .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-img-top {
+    transform: scale(1.05);
+}

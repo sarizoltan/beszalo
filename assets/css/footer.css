@@ -1,0 +1,119 @@
+.site-footer {
+    background-color: #0b2042; /* Sötétkék háttér */
+    color: #a9b3c1; /* Világos szürke szöveg */
+    font-size: 0.9rem;
+}
+
+.footer-top {
+    padding: 60px 0;
+    border-bottom: 1px solid #1a2f53;
+}
+
+.footer-col {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    max-height: 40px;
+    filter: brightness(0) invert(1); /* Fehérré teszi a logót */
+}
+
+.footer-logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #0d6efd; /* Kék vonal */
+}
+
+.contact-info, .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.contact-info i {
+    margin-right: 10px;
+    color: #0d6efd;
+    margin-top: 4px;
+}
+
+.footer-links a {
+    color: #a9b3c1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.footer-html-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+}
+
+.social-links a {
+    color: #a9b3c1;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+.social-links a:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+    display: none; /* JS fogja megjeleníteni */
+    opacity: 0;
+    transition: opacity 0.4s, transform 0.4s;
+    z-index: 1000;
+}
+
+.scroll-to-top.show {
+    display: block;
+    opacity: 1;
+}

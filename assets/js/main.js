@@ -1,0 +1,1 @@
+console.log("main.js sikeresen betöltve!");

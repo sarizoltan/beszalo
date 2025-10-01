@@ -1,0 +1,336 @@
+/* === Főoldali Szekciók Általános Stílusai === */
+.homepage-section {
+    border-bottom: 1px solid #eee;
+}
+
+.section-header {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #222;
+}
+
+.view-more-link {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+/* === Kiemelt Kategóriák Szekció === */
+.category-showcase-card {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+}
+
+.category-showcase-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.category-showcase-card .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px auto;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.category-showcase-card .icon-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-showcase-card .category-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.category-showcase-card .item-count {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+
+/* === Promóciós Bannerek Szekció === */
+.promo-banner-card {
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px;
+    min-height: 220px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.promo-banner-card:hover {
+    transform: scale(1.03);
+}
+
+/* Átfedés a jobb olvashatóságért sötét képeken */
+.promo-banner-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.promo-banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.promo-tag {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.promo-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.promo-subtitle {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.promo-button {
+    font-weight: 600;
+    color: #222;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* === Trendi Termékek Szekció (Glide.js) === */
+.trending-slider .product-card {
+    margin-bottom: 0; /* A csúszkán belüli kártyáknak nem kell alsó margó */
+}
+
+.glide__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #333;
+    transition: all 0.3s ease;
+}
+.glide__arrow:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+.glide__arrow--left { left: -20px; }
+.glide__arrow--right { right: -20px; }
+
+@media (max-width: 768px) {
+    .glide__arrow--left { left: 5px; }
+    .glide__arrow--right { right: 5px; }
+}
+/* ... (a meglévő CSS kód) ... */
+
+/* === Népszerű Termékek Szekció (Füles) === */
+.popular-items-tabs {
+    border-bottom: 2px solid #dee2e6;
+}
+.popular-items-tabs .nav-item {
+    margin-bottom: -2px;
+}
+.popular-items-tabs .nav-link {
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: #6c757d;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+.popular-items-tabs .nav-link:hover {
+    color: #0d6efd;
+}
+.popular-items-tabs .nav-link.active {
+    color: #0d6efd;
+    background-color: transparent;
+    border-bottom-color: #0d6efd;
+}
+.tab-content .product-card {
+    margin-bottom: 0;
+}
+/* ... (a meglévő CSS kód a fájlban) ... */
+
+/* === Információs Sáv Szekció === */
+.info-bar-section {
+    background-color: #2b384a; /* Sötétkék háttér */
+    color: #fff;
+}
+
+.info-icon {
+    font-size: 2.5rem; /* Nagyobb ikonok */
+    opacity: 0.8;
+}
+
+.info-title {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.info-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* A dobozok elválasztása nagyobb képernyőn */
+@media (min-width: 992px) {
+    .info-box {
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        padding-right: 15px;
+    }
+    .col-lg-3:last-child .info-box {
+        border-right: 0;
+    }
+}
+/* ... (a meglévő CSS kód a fájlban) ... */
+
+/* === Nagy Banner Szekció === */
+.large-banner-wrapper {
+    position: relative;
+    padding: 6rem 2rem;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Átfedés a jobb olvashatóságért */
+.large-banner-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.4); /* Világos átfedés */
+    z-index: 1;
+}
+
+.large-banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.large-banner-content .pre-title {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.large-banner-content .main-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.large-banner-content .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.large-banner-content .btn-primary {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.large-banner-content .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    .large-banner-wrapper {
+        padding: 4rem 1.5rem;
+    }
+    .large-banner-content .main-title {
+        font-size: 2rem;
+    }
+}
+/* ... (a meglévő CSS kód) ... */
+
+/* === Márka Csúszka Szekció === */
+.brands-slider-section {
+    background-color: #f8f9fa; /* Enyhe szürke háttér */
+}
+
+.brand-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.brand-item img {
+    max-height: 100%;
+    max-width: 100%;
+    filter: grayscale(100%); /* Alapból szürkeárnyalatos */
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.brand-item:hover img {
+    filter: grayscale(0%); /* Hover-re színes lesz */
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* A nyilak pozíciójának finomhangolása ehhez a szekcióhoz */
+.brand-slider .glide__arrow {
+    top: 40%; /* Kicsit feljebb, mert a logók nem magasak */
+}

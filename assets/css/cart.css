@@ -1,0 +1,132 @@
+/* Kosár dropdown stílusok */
+.cart-dropdown {
+    width: 380px;
+    max-height: 600px;
+    padding: 0;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.cart-dropdown-header {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+}
+
+.cart-dropdown-body {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    transition: background-color 0.2s;
+}
+
+.cart-item:hover {
+    background-color: #f8f9fa;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #212529;
+    text-decoration: none;
+    display: block;
+}
+
+.cart-item-title:hover {
+    color: #0d6efd;
+}
+
+.cart-item-category {
+    font-size: 0.75rem;
+    color: #6c757d;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.cart-item-category:hover {
+    color: #0d6efd;
+}
+
+.cart-item-price {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #198754;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.cart-item-quantity input {
+    width: 50px;
+    text-align: center;
+    padding: 0.25rem;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.cart-item-remove {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+.cart-item-remove:hover {
+    color: #bb2d3b;
+}
+
+.cart-dropdown-footer {
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+}
+
+.cart-empty {
+    padding: 2rem;
+    text-align: center;
+    color: #6c757d;
+}
+
+.cart-empty i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+/* Loading spinner */
+.cart-loading {
+    text-align: center;
+    padding: 2rem;
+}
+
+.spinner-border-sm {
+    width: 1.5rem;
+    height: 1.5rem;
+}

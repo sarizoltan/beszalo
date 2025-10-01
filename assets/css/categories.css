@@ -1,0 +1,39 @@
+.category-card {
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.category-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.category-image-wrapper {
+    width: 100%;
+    padding-top: 75%; /* 4:3 arány */
+    position: relative;
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.category-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* A kép szépen kitölti a helyét vágással */
+}
+
+.category-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
